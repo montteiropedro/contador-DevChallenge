@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador - Counter Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./public/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./public/counter-style.css" type="text/css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Fonts - fontawesome.com -->
+  <script src="https://kit.fontawesome.com/944f8aa2f6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <main class="container">
+
+    <div class="counter-div">
+
+      <div class="counter-div-header">
+        <span class="counter-header-title">Contador</span>
+        <button onclick="redirectBack()" id="bttn-return" class="bttn-input">Retornar</button>
+      </div>
+
+      <h1 class="h1-title">Faltam</h1>
+
+      <div class="counter-div-counter">
+        <div class="counter">
+          <span class="day">00</span>
+          <span class="hour">00</span>
+          <span class="min">00</span>
+          <span class="sec">00</span>
+        </div>
+
+        <div class="subtitle">
+          <span class="day">Dias</span>
+          <span class="hour">Horas</span>
+          <span class="min">Minutos</span>
+          <span class="sec">Segundos</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script type="module" src="./main.js"></script>
+  <!-- <script type="module" src="./modules/script.js"></script> -->
+  <!-- <script type="module" src="./modules/counter.js"></script> -->
+  <!-- <script type="text/javascript" src="./redirectBack.js"></script> -->
+  
+</body>
+</html>
+
+
+<!--
+Contador
+Reiniciar
+Faltam
+Dias Horas Minutos Segundos
+-->

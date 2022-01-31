@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador - Main Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./public/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./public/index-style.css" type="text/css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Fonts - fontawesome.com -->
+  <!-- <script src="https://kit.fontawesome.com/944f8aa2f6.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+  <main class="container">
+    
+    
+    <form action="./contador.html" method="GET">
+      <div id="counter">
+        <h1 class="h1-title">Contador</h1>
+  
+        <h2 class="h2-title">Informe uma data</h2>
+  
+        <input type="date" name="date" id="date" class="text-input">
+        <!-- <input onclick="getInfos()" type="submit" value="Iniciar Contagem" id="bttn-save-date" class="bttn-input"> -->
+        <button id="bttn-save-date" class="bttn-input">Iniciar Contagem</button>
+      </div>
+    </form>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script type="module" src="./main.js">
+    minLimit();
+  </script>
+  <!-- <script type="module" src="./modules/script.js"></script> -->
+  <!-- <script type="module" src="./modules/counter.js"></script> -->
+
+</body>
+</html>
+
+
+
+<!--
+Contador
+Informe uma data
+DD/MM/AAAA
+Iniciar contagem
+-->

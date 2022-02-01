@@ -4,7 +4,7 @@
 
   :root {
     --green: #21EB00;
-    --gray: #aaaaaa;
+    --input-text-background: #aaaaaa;
     --background-gray: #191A18;
   }
 
@@ -28,7 +28,7 @@
     height: 2.5rem;
     width: 11.9rem;
 
-    background-color: var(--gray);
+    background-color: var(--input-text-background);
 
     border: none;
     border-radius: 0.7rem;

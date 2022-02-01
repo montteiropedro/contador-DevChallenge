@@ -29,7 +29,7 @@
   
         <h2 class="h2-title">Informe uma data</h2>
   
-        <input type="date" name="date" id="date" class="text-input">
+        <input onload="minLimit()" type="date" name="date" id="date" class="text-input">
         <!-- <input onclick="getInfos()" type="submit" value="Iniciar Contagem" id="bttn-save-date" class="bttn-input"> -->
         <button id="bttn-save-date" class="bttn-input">Iniciar Contagem</button>
       </div>
@@ -38,9 +38,7 @@
   </main>
 
   <!-- JavaScript -->
-  <script type="module" src="./main.js">
-    minLimit();
-  </script>
+  <script type="module" src="./main.js"></script>
   <!-- <script type="module" src="./modules/script.js"></script> -->
   <!-- <script type="module" src="./modules/counter.js"></script> -->
 

@@ -39,13 +39,20 @@ let givenDate = new Date(dateReg);
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dez'];
 
 let day = givenDate.getUTCDate();
+  day = day < 10 ? `0${day}` : day;
 let month = givenDate.getUTCMonth();
 let year = givenDate.getUTCFullYear();
 
 let givenDateFinal = `${day} ${months[month]} ${year} 00:00:00`;
 let givenDateMili = Date.parse(givenDateFinal);
 
+  console.log(givenDateFinal);
 
+// As próximas 3 linhas de código cuidão de exibir no contador, em PTBR, a data escolhida pelo usuário.
+let monthsPTBR = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+let givenDateFinalPTBR =  `${day} ${monthsPTBR[month]} ${year}`;
+
+document.getElementById('target-date').innerText = givenDateFinalPTBR;
 
 /* Esse vídeo me ajudou a fazer a contagem regressiva
 -https://www.youtube.com/watch?v=ms0mXabu5RY */

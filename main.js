@@ -4,10 +4,11 @@
 window.onload = function minLimit () {
   const minDate = new Date();
 
-  const minDay = minDate.getUTCDate();
-  let minMonth = minDate.getUTCMonth() + 1;
+  let minDay = minDate.getDate();
+    minDay = minDay < 10 ? `0${minDay}` : minDay;
+  let minMonth = minDate.getMonth() + 1;
     minMonth = minMonth < 10 ? `0${minMonth}` : minMonth;
-  const minYear = minDate.getUTCFullYear()
+  const minYear = minDate.getFullYear();
 
   const min = `${minYear}-${minMonth}-${minDay}`
 
